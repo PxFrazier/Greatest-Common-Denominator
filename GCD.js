@@ -1,17 +1,16 @@
-//finds the greatest common denominator between two integers
 function GCD(num1, num2)
 {
-	let remainder = 1;
+    let remainder = 1;
     let result;
 	
-	while(remainder)
-	{
-		remainder = num1 % num2;
-		num1 = num2;
-		num2 = remainder;
-	}
+    while(remainder)
+    {
+	remainder = num1 % num2;
+	num1 = num2;
+	num2 = remainder;
+    }
 	
-	num1 == 1 ?
+    num1 == 1 ?
     result = 'These are coprimes' :
     result = 'These are not coprimes'
 
